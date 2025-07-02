@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navius Bizgrow - Business Advisory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-blue-900 text-white fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold">Navius Bizgrow</h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#about" class="hover:text-blue-300">About Us</a>
+                    <a href="#investment" class="hover:text-blue-300">Investment</a>
+                    <a href="#loan" class="hover:text-blue-300">Loan</a>
+                    <div class="relative group">
+                        <a href="#advisory" class="hover:text-blue-300">Advisory</a>
+                        <div class="absolute hidden group-hover:block bg-blue-800 text-white rounded-lg shadow-lg mt-2">
+                            <a href="#advisory-tax-planning" class="block px-4 py-2 hover:bg-blue-700">Tax Planning</a>
+                            <a href="#advisory-business-setup" class="block px-4 py-2 hover:bg-blue-700">Business Setup</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen bg-gradient-to-r from-blue-800 to-blue-600 text-white flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Grow Your Business with Novius Bizgrow</h2>
+            <p class="text-lg md:text-xl mb-8">Expert advisory services for tax planning, business setup, investments, and loans.</p>
+            <a href="#advisory" class="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100">Get Started</a>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-8">About Us</h2>
+            <p class="text-lg text-gray-700 text-center">Novius Bizgrow is your trusted partner in business growth, offering tailored solutions in advisory, investment, and financial services. Our team of experts is dedicated to helping your business thrive in a competitive market.</p>
+        </div>
+    </section>
+
+    <!-- Investment -->
+    <section id="investment" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-8">Investment</h2>
+            <p class="text-lg text-gray-700 text-center">We provide strategic investment advice to maximize returns and minimize risks. From portfolio management to market analysis, our experts guide you to make informed investment decisions.</p>
+        </div>
+    </section>
+
+    <!-- Loan -->
+    <section id="loan" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-8">Loan</h2>
+            <p class="text-lg text-gray-700 text-center">Access customized loan solutions to fuel your business growth. We offer competitive rates and flexible terms to meet your financial needs.</p>
+        </div>
+    </section>
+
+    <!-- Advisory -->
+    <section id="advisory" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-8">Advisory Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Tax Planning -->
+                <div id="advisory-tax-planning" class="p-6 bg-gray-50 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Tax Planning</h3>
+                    <p class="text-gray-700">Optimize your tax strategy with our expert guidance. We help you navigate complex tax regulations to minimize liabilities and ensure compliance.</p>
+                </div>
+                <!-- Business Setup -->
+                <div id="advisory-business-setup" class="p-6 bg-gray-50 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Business Setup</h3>
+                    <p class="text-gray-700">From legal structure to operational planning, we assist you in setting up your business for success with tailored strategies and support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>© 2025 Novius Bizgrow. All rights reserved.</p>
+            <p class="mt-2">Contact us: info@noviusbizgrow.com | +1-800-123-4567</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
